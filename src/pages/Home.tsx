@@ -64,7 +64,7 @@ function Home() {
             </Link>
 
             <motion.a
-              href="https://github.com/"
+              href="https://github.com/abhigyan-oss/motionlab"
               target="_blank"
               rel="noreferrer"
               className="secondary-button"

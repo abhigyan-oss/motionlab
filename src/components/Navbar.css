@@ -94,18 +94,19 @@
 
 .explore-wrapper {
   position: relative;
+  z-index: 1001;
 }
 
 .explore-label {
   display: flex;
   align-items: center;
-
   padding: 10px 0;
+  user-select: none;
 }
 
 .explore-menu {
   position: absolute;
-  top: 38px;
+  top: calc(100% - 2px);
   right: 0;
 
   width: 170px;
@@ -116,12 +117,14 @@
   padding: 8px;
 
   background: #14151d;
-
   border: 1px solid #292c38;
   border-radius: 12px;
 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
 
   transform: translateY(-5px);
 
@@ -129,30 +132,37 @@
     opacity 0.2s ease,
     transform 0.2s ease,
     visibility 0.2s ease;
+
+  z-index: 2000;
 }
 
 .explore-wrapper:hover .explore-menu {
   opacity: 1;
   visibility: visible;
-
+  pointer-events: auto;
   transform: translateY(0);
 }
 
 .explore-menu a {
+  display: block;
+  width: 100%;
+
   padding: 10px 12px;
 
   border-radius: 8px;
 
   color: #9295a3;
-
   font-size: 12px;
+  text-decoration: none;
+
+  position: relative;
+  z-index: 2001;
 }
 
 .explore-menu a:hover {
   background: #1d1f29;
   color: white;
 }
-
 /* MOBILE TOGGLE */
 
 .menu-toggle {
