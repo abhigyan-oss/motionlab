@@ -76,7 +76,7 @@ function Navbar() {
 
         <div className="navbar-actions">
           <motion.a
-            href="https://github.com/"
+            href="https://github.com/abhigyan-oss/motionlab"
             target="_blank"
             rel="noreferrer"
             className="github-button"
@@ -168,7 +168,7 @@ function Navbar() {
             </div>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/abhigyan-oss/motionlab"
               target="_blank"
               rel="noreferrer"
               className="mobile-github"
