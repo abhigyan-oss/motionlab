@@ -1,0 +1,357 @@
+.transitions-page {
+    min-height: 100vh;
+    padding-bottom: 120px;
+  }
+  
+  .transitions-hero {
+    width: min(1100px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 150px 0 90px;
+    text-align: center;
+  }
+  
+  .transitions-label {
+    margin-bottom: 24px;
+    color: #d000ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  
+  .transitions-hero h1 {
+    margin: 0;
+    font-size: clamp(60px, 9vw, 120px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    font-weight: 800;
+  }
+  
+  .transitions-hero h1 span {
+    color: #d000ff;
+  }
+  
+  .transitions-hero p {
+    max-width: 680px;
+    margin: 30px auto 0;
+    color: #9693a8;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  /* LAB */
+  
+  .transition-lab {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(320px, 0.7fr);
+    border: 1px solid #292633;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #101016;
+  }
+  
+  .transition-preview {
+    min-height: 580px;
+    border-right: 1px solid #292633;
+  }
+  
+  .transition-preview-header {
+    min-height: 90px;
+    padding: 22px 28px;
+    border-bottom: 1px solid #292633;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .transition-preview-header span,
+  .transition-controls-header span,
+  .transition-section-heading span {
+    color: #d000ff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  
+  .transition-preview-header h2,
+  .transition-controls-header h2 {
+    margin: 8px 0 0;
+    font-size: 20px;
+  }
+  
+  .transition-preview-header button,
+  .transition-code-header button {
+    border: 1px solid #302c3d;
+    background: #171620;
+    color: #f5f3fa;
+    border-radius: 9px;
+    padding: 11px 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .transition-preview-header button:hover,
+  .transition-code-header button:hover {
+    border-color: #d000ff;
+  }
+  
+  .transition-stage {
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .transition-object {
+    width: 150px;
+    height: 150px;
+    border-radius: 28px;
+    background: #d000ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 60px rgba(208, 0, 255, 0.25);
+  }
+  
+  .transition-object span {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  
+  .transition-object small {
+    margin-top: 6px;
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+  
+  /* CONTROLS */
+  
+  .transition-controls {
+    padding: 28px 24px;
+  }
+  
+  .transition-controls-header {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #292633;
+  }
+  
+  .transition-control-group {
+    padding: 24px 0;
+    border-bottom: 1px solid #292633;
+  }
+  
+  .transition-control-group > label,
+  .transition-range-control label {
+    display: block;
+    margin-bottom: 12px;
+    color: #aaa7b8;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  .transition-type-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .transition-type-buttons button,
+  .direction-buttons button,
+  .ease-buttons button {
+    padding: 11px 8px;
+    border: 1px solid #302c3d;
+    background: #171620;
+    color: #aaa7b8;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  
+  .transition-type-buttons button:hover,
+  .direction-buttons button:hover,
+  .ease-buttons button:hover,
+  .transition-type-buttons button.active,
+  .direction-buttons button.active,
+  .ease-buttons button.active {
+    background: #d000ff;
+    border-color: #d000ff;
+    color: white;
+  }
+  
+  .direction-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .ease-buttons {
+    display: grid;
+    gap: 8px;
+  }
+  
+  .transition-range-control {
+    padding: 24px 0;
+    border-bottom: 1px solid #292633;
+  }
+  
+  .transition-range-control > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .transition-range-control strong {
+    color: #d000ff;
+    font-size: 12px;
+  }
+  
+  .transition-range-control input {
+    width: 100%;
+    accent-color: #d000ff;
+  }
+  
+  /* CODE */
+  
+  .transition-code {
+    width: min(1200px, calc(100% - 48px));
+    margin: 50px auto 0;
+    border: 1px solid #292633;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #0c0b10;
+  }
+  
+  .transition-code-header {
+    padding: 22px 28px;
+    border-bottom: 1px solid #292633;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .transition-code-header span {
+    color: #d000ff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  
+  .transition-code-header h2 {
+    margin: 8px 0 0;
+    font-size: 20px;
+  }
+  
+  .transition-code pre {
+    margin: 0;
+    padding: 30px;
+    overflow-x: auto;
+    color: #d7c9e5;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  
+  /* TECHNIQUES */
+  
+  .transition-techniques {
+    width: min(1200px, calc(100% - 48px));
+    margin: 80px auto 0;
+  }
+  
+  .transition-section-heading {
+    margin-bottom: 28px;
+  }
+  
+  .transition-section-heading h2 {
+    margin: 10px 0 0;
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .transition-technique-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .transition-technique-grid article {
+    min-height: 200px;
+    padding: 26px;
+    border: 1px solid #292633;
+    border-radius: 16px;
+    background: #101016;
+  }
+  
+  .transition-technique-grid article > span {
+    color: #d000ff;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  
+  .transition-technique-grid h3 {
+    margin: 28px 0 10px;
+    font-size: 20px;
+  }
+  
+  .transition-technique-grid p {
+    margin: 0;
+    color: #898696;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 950px) {
+    .transition-lab {
+      grid-template-columns: 1fr;
+    }
+  
+    .transition-preview {
+      border-right: 0;
+      border-bottom: 1px solid #292633;
+    }
+  
+    .transition-technique-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .transitions-hero {
+      padding-top: 110px;
+    }
+  
+    .transitions-hero h1 {
+      letter-spacing: -3px;
+    }
+  
+    .transition-lab,
+    .transition-code,
+    .transition-techniques {
+      width: min(100% - 24px, 1200px);
+    }
+  
+    .transition-preview-header {
+      padding: 18px;
+    }
+  
+    .transition-stage {
+      min-height: 400px;
+    }
+  
+    .transition-technique-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .transition-code pre {
+      padding: 20px;
+      font-size: 11px;
+    }
+  }

@@ -1,0 +1,322 @@
+.spring-page {
+    width: min(100%, 1000px);
+    margin: 0 auto;
+    padding: 100px 24px 120px;
+  }
+  
+  .spring-hero {
+    min-height: 65vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    text-align: center;
+  }
+  
+  .spring-label {
+    color: #c000ff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+  }
+  
+  .spring-hero h1 {
+    margin: 0;
+  
+    font-size: clamp(58px, 9vw, 110px);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -5px;
+  }
+  
+  .spring-hero h1 span {
+    color: #c000ff;
+  }
+  
+  .spring-hero p {
+    max-width: 620px;
+    margin: 30px auto 0;
+  
+    color: #9295a5;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  
+  .spring-playground {
+    position: relative;
+  
+    min-height: 520px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid #282b38;
+    border-radius: 28px;
+  
+    background:
+      radial-gradient(
+        circle at center,
+        rgba(192, 0, 255, 0.13),
+        transparent 40%
+      ),
+      #101119;
+  
+    overflow: hidden;
+  }
+  
+  .playground-label {
+    position: absolute;
+    top: 28px;
+  
+    color: #777b8d;
+  
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  
+  .spring-object {
+    width: 180px;
+    height: 180px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 30px;
+  
+    background: #c000ff;
+  
+    color: white;
+  
+    box-shadow:
+      0 20px 80px rgba(192, 0, 255, 0.35),
+      0 0 100px rgba(192, 0, 255, 0.12);
+  
+    cursor: grab;
+  
+    user-select: none;
+  }
+  
+  .spring-object span {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  
+  .spring-object small {
+    margin-top: 8px;
+  
+    font-size: 11px;
+    letter-spacing: 4px;
+  
+    opacity: 0.75;
+  }
+  
+  .physics-panel {
+    margin-top: 24px;
+  
+    padding: 30px;
+  
+    border: 1px solid #282b38;
+    border-radius: 24px;
+  
+    background: #101119;
+  }
+  
+  .physics-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    margin-bottom: 30px;
+  }
+  
+  .physics-heading > div span {
+    color: #c000ff;
+  
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  
+  .physics-heading h2 {
+    margin: 8px 0 0;
+  
+    color: white;
+    font-size: 25px;
+  }
+  
+  .physics-heading button {
+    padding: 10px 18px;
+  
+    border: 1px solid #303341;
+    border-radius: 10px;
+  
+    background: #171923;
+    color: white;
+  
+    cursor: pointer;
+  }
+  
+  .physics-heading button:hover {
+    border-color: #c000ff;
+  }
+  
+  .physics-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .physics-control {
+    padding: 20px;
+  
+    border: 1px solid #292c38;
+    border-radius: 16px;
+  
+    background: #0d0e14;
+  }
+  
+  .control-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin-bottom: 18px;
+  }
+  
+  .control-top strong {
+    color: white;
+  }
+  
+  .control-top b {
+    color: #c000ff;
+  }
+  
+  .physics-control input {
+    width: 100%;
+  
+    accent-color: #c000ff;
+  
+    cursor: pointer;
+  }
+  
+  .physics-control p {
+    margin: 15px 0 0;
+  
+    color: #777b8d;
+  
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  
+  .physics-explanation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+    gap: 16px;
+  
+    margin-top: 24px;
+  }
+  
+  .explanation-card {
+    padding: 26px;
+  
+    border: 1px solid #282b38;
+    border-radius: 18px;
+  
+    background: #101119;
+  }
+  
+  .explanation-card span {
+    color: #c000ff;
+  
+    font-size: 11px;
+    font-weight: 800;
+  }
+  
+  .explanation-card h3 {
+    margin: 15px 0 8px;
+  
+    color: white;
+    font-size: 20px;
+  }
+  
+  .explanation-card p {
+    margin: 0;
+  
+    color: #777b8d;
+  
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .spring-code {
+    margin-top: 24px;
+  
+    border: 1px solid #282b38;
+    border-radius: 20px;
+  
+    overflow: hidden;
+  
+    background: #0e0f16;
+  }
+  
+  .code-title {
+    padding: 16px 22px;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    border-bottom: 1px solid #282b38;
+  
+    color: #8e91a0;
+  
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .code-title b {
+    color: #c000ff;
+  }
+  
+  .spring-code pre {
+    margin: 0;
+    padding: 28px;
+  
+    color: #d7a7ff;
+  
+    font-size: 14px;
+    line-height: 1.8;
+  
+    overflow-x: auto;
+  }
+  
+  @media (max-width: 750px) {
+    .spring-page {
+      padding: 80px 16px;
+    }
+  
+    .spring-hero h1 {
+      letter-spacing: -3px;
+    }
+  
+    .spring-playground {
+      min-height: 420px;
+    }
+  
+    .physics-controls,
+    .physics-explanation {
+      grid-template-columns: 1fr;
+    }
+  
+    .physics-heading {
+      align-items: flex-start;
+    }
+  }
